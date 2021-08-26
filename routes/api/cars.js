@@ -30,7 +30,7 @@ router.post("/", (req, res) => {
       .json({ msg: "manufacturer, model and price needs to be included" });
   }
   cars.push(newCar);
-  res.json(cars);
+  res.redirect("/");
 });
 
 module.exports = router;
