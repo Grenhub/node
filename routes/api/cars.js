@@ -31,6 +31,7 @@ router.post("/", (req, res) => {
   }
   cars.push(newCar);
   res.redirect("/");
+  res.json("/");
 });
 
 module.exports = router;
