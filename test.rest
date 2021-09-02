@@ -1,0 +1,22 @@
+GET http://localhost:3000
+
+###
+
+POST http://localhost:3000/api/cars
+Content-Type: application/json
+
+{
+    "manufacturer": "test.rest",
+    "model": "leavingRestBehind",
+    "price": "0"
+}
+
+###
+
+GET http://localhost:3000/api/cars/
+// Will give you all cars
+
+###
+
+GET http://localhost:3000/api/cars/1
+// Will give you a single car, the first one in the array with an Id of 1

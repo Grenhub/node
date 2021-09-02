@@ -1,13 +1,13 @@
 const logger = require("./middleware/logger");
 const exphbs = require("express-handlebars");
 const express = require("express");
-const cars = require('./Cars')
+const cars = require('./Cars');
 const path = require("path");
 const app = express();
 const port = 3000;
 
 // Init middleware
-/* app.use(logger); */
+app.use(logger);
 
 //Handlebars middleware
 app.engine("handlebars", exphbs({ defaultLayout: 'primary' }));
